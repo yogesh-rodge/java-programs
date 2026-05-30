@@ -10,7 +10,6 @@ public class Employee {
         this.salary = salary;
     }
 
-
     public Employee(String name, double salary, String department) {
         this.name = name;
         this.salary = salary;
@@ -45,6 +44,4 @@ public class Employee {
             ", department='" + department + '\'' +
             '}';
     }
-
-
 }
