@@ -1,9 +1,16 @@
 package com.infotech.java8.intermediateOp.Model;
 
 public class Employee {
+    int id;
     String name;
     double salary;
     String department;
+
+
+    public Employee(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
 
     public Employee(String name, double salary) {
         this.name = name;
@@ -39,9 +46,11 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-            "name='" + name + '\'' +
+            "id=" + id +
+            ", name='" + name + '\'' +
             ", salary=" + salary +
             ", department='" + department + '\'' +
             '}';
     }
+
 }
